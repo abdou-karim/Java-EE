@@ -1,0 +1,56 @@
+.connexion
+{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.myBody
+{
+    margin: 0;
+    overflow-y: hidden;
+}
+.night
+{
+    height: 80vh;
+    margin: 5rem auto;
+    background: url("../assets/Img_1.png");
+    background-size: cover;
+    position: relative;
+    box-shadow: 1px 2px 60px rgba(0,0,0,0.4);
+    overflow-x:hidden;
+}
+.surface
+{
+    height: 160px;
+    width: 600%;
+    background: url("../assets/Img_02.png");
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-repeat: repeat-x;
+    animation: moveRight 6s linear infinite;
+}
+.car
+{
+    position: absolute;
+    bottom: 2%;
+    left: 24%;
+    animation:suspension 1s linear infinite ;
+}
+/*animation*/
+@keyframes moveRight
+{
+    100%{transform: translateX(-2950px)}
+}
+@keyframes suspension {
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(2px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
